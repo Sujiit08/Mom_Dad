@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Form</title>
+<style >
+       body {
+        font-family: Arial;
+        background-color: rgb(37, 233, 247);
+        background-image: url(WhatsApp\ Image\ 2025-12-06\ at\ 17.56.55.jpeg);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+       }
+
+        form {
+            width: 350px;
+            margin: 100px auto;
+            padding: 20px;
+            background: rgb(116, 233, 171);
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgb(0, 0, 0);
+            background-size: auto;
+            justify-content: center;
+            align-items: center;
+          
+          }
+          .login-box {
+            width: 400px;
+            padding: 30px;
+            margin: 100px auto;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+</style>
+
+</head>
+<body>
+      <div class="login-box" id="paymentBox">
+   
+   <form>
+      <h1>Payment Form</h1>
+      <p>required Field are allowed *</p>
+      <h2>Contact Information</h2>
+      <p>Name:* <input type="text" name="name" required></p>
+      <fieldset>
+      <legend>Gender *</legend>
+        <p>
+        Male <input type="radio" name="Gender" id="Male" required>
+        Female <input type="radio" name="Gender" id="Female" required>
+      </p>
+      </fieldset>
+      <P>Address: <textarea name="Address" id="Address" cols="40" rows="2"></textarea></P>
+      <p>Email:* <input type="email" name="email" id="email" required></p>
+      <p>Password:* <input type="password" name="password" id="password" required ></p>
+      <p>Pincode:* <input type="number" name="Pincode" id="Pincode" required></p>
+      <h2>Payment Information</h2>
+      <p>Card type *
+        <select name="Card_type" id="Card_type" required>
+          <option value="">--Select a card type--</option>
+          <option value="paytm">paytm</option>
+          <option value="rupay">rupay</option>
+          <option value="visa">visa</option>
+        </select>
+      </p>
+      <p>
+        Card Number:* <input type="number" name="Card_number" id="Card_number" required>
+      </p>
+      <p>
+        Expiration Date:* <input type="date" name="exp_date" id="exp_date" required>
+      </p>
+      <p>
+        CVV:* <input type="password" name="CVV" id="CVV" required>
+      </p>
+      <input type="submit" value="Pay Now">
+   </form>
+   </div>
+   
+</body>
+</html>
